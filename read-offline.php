@@ -36,7 +36,7 @@ if (get_option( 'Read_Offline_Admin_Settings' )) {
 	});
 } else {
 	if ( is_admin() ) {
-		return add_action( 'admin_notices', 'read_offline_admin_notice_update_options' );
+		return add_action( 'admin_notices', 'read_offline_admin_notice_update_options',99 );
 	}
 }
 
@@ -57,9 +57,9 @@ function read_offline_admin_notice_php_version () {
 }
 
 function read_offline_admin_notice_update_options () {
-    $msg[] = '<div class="error"><p>';
-    $msg[] = '<strong>Read Offline</strong>:';
-    $msg[] = 'Please save your <a href="admin.php?page=read_offline_options">Read Offline options</a> ';
+    $msg[] = '<div class="updated"><p>';
+    //$msg[] = '<strong>Read Offline</strong>:';
+    $msg[] = __('Please configure','read-offline') . ' <a href="admin.php?page=read_offline_options"><strong>Read Offline</strong></a> ';
     $msg[] = '</p></div>';
     echo implode( PHP_EOL, $msg );
 }
