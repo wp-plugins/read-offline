@@ -4,13 +4,15 @@ Donate link: http://soderlind.no/donate/
 Tags: pdf, epub, mobi, print
 Requires at least: 4.0
 Tested up to: 4.1
-Stable tag: 0.2.3
+Stable tag: 0.2.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Read Offline allows you to download or print posts and pages. You can download the posts in PDF, ePub or mobi
 
 == Description ==
+
+**NOTE** version 0.2.3 is broken, please [download the latest .zip archive](https://github.com/soderlind/read-offline/archive/master.zip) from [GitHub](https://github.com/soderlind/read-offline)
 
 **NOTE** This is still a beta version
 
@@ -44,7 +46,7 @@ Read Offline allows you to download or print posts and pages. You can download t
 
 == Installation ==
 
-1. Download the plugin and extract the read-online.zip
+1. Download the plugin and extract the [read-online.zip](https://github.com/soderlind/read-offline/archive/master.zip) from [GitHub](https://github.com/soderlind/read-offline)
 1. Upload the extracted `read-online` folder to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
@@ -64,6 +66,8 @@ There are 2 ways you can add the Read Offline link
 3. Read Offline -> Print
 
 == Changelog ==
+= 0.2.3.1= 
+* **NOTE** version 0.2.3 is broken, please [download the latest .zip archive](https://github.com/soderlind/read-offline/archive/master.zip) from [GitHub](https://github.com/soderlind/read-offline)
 = 0.2.3 =
 * Reduced mPDF library size by 90% (!!), incl removing fonts. Only [DejaVu fonts](http://dejavu-fonts.org/) are included. Will add font management (i.e. option to add fonts) in later version. Please [tell me](https://github.com/soderlind/read-offline/issues/new) if this breaks the plugin.
 = 0.2.2 =
